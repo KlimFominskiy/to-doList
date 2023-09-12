@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - To DO List</title>
+    <link rel="stylesheet" href="to-doList.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script defer src="to-doList.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="to-doHeader">
+            <h1 class="to-doHeader">To-do list</h1>
+        </div>
+        <div class="denoteButtonsList">
+            <label class="noDenoteLabel">
+                <input class="noDenoteButton" type="radio" name="denoteButton" onclick="denoteTasksListItems(this)">
+                Не выделять элементы
+            </label>
+            <label class="evenDenoteLabel">
+                <input class="evenButton" type="radio" name="denoteButton" onclick="denoteTasksListItems(this)" checked>
+                Выделять чётные элементы
+            </label>
+            <label class="oddDenoteLabel">
+                <input class="oddButton" type="radio" name="denoteButton" onclick="denoteTasksListItems(this)">
+                Выделять нечётные элементы
+            </label>
+        </div>
+            <div>
+                <button class="deleteFirstTaskItemButton" type="submit">Удалить первый элемент</button>
+                <button class="deleteLastTaskItemButton" type="submit">Удалить последний элемент</button>
+            </div>
+        <form class="tasksForm">
+            <div class="inputField">
+                <input class="taskInput" type="text" placeholder="Новая задача...">
+                <button class="addButton" type="submit">+</button>
+            </div>
+        </form>
+        <ul class="tasksList"></ul>
+    </div>
+</body>
+
+</html>

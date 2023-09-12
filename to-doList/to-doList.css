@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+::selection{
+    color: #ffff;
+    background: rgb(86, 168, 206);
+}
+body{
+    overflow: hidden;
+    padding: 10px;
+    background: darkseagreen;
+}
+.app{
+    background: #ffffff;
+    max-width: 400px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.to-doHeader{
+    font-size: 30px;
+    font-weight: 600;
+}
+.app .inputField{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    height: 45px;
+}
+.taskInput{
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+}
+.taskInput:focus{
+    border-color: #1a8c0f;
+}
+.addButton{
+    width: 50px;
+    height: 100%;
+    border: none;
+    color: #fff;
+    margin-left: 5px;
+    font-size: 21px;
+    outline: none;
+    background: #1a8c0f;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+.addButton:hover{
+    background: #3ac52f;
+}
+.tasksList{
+    max-height: 250px;
+    overflow-y: auto;
+}
+.task, .completedTask{
+    position: relative;
+    list-style: none;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: default;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.denoteButtonsList {
+    display: flex;
+    flex-direction: column;
+}
+.deleteButton, .checkTask{
+    background-color: #c74646;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.taskLabel{
+    width: 240px;
+}
+
+
